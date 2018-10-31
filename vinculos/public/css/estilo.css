@@ -6,16 +6,19 @@
 	border: none;
 	outline: none;
 }
-.body {
-    /*height: 100%;*/
-    width: 100%;
+
+
+
+body {
+    height: 100%;
+    /*width: 100%;*/
     background-position:  center center;
-    background: url('../images/game/fondo_body.jpg') ;
+    background: url('../images/game/fondo_body1.jpg') ;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #66999;
+    /*background-color: #66999;*/
     /*height: 100%;*/
     margin: 0;
     border-collapse: collapse;
@@ -33,8 +36,63 @@
     background-color: #66999;
     height: 145px;
     margin: 0;
+    margin-top: -65px;
     border-collapse: collapse;
 }
+
+
+/*Producto page css*/
+.blackbanner {
+    /*height: 100%;*/
+    width: 100%;
+    background-position:  center center;
+    background: url('../images/game/productos_banner.jpg') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.productoText{
+    color: white;
+}
+
+.logo-espol2,.logo-googleplay {
+    margin-left: 2px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.meparrafo{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+}
+
+
+.textocentrado{
+    text-align: center;
+}
+.ave{
+    margin-left: auto;
+    margin-right: auto;
+}
+.iconoP{
+    width: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+ 
+}
+.variosIconos{
+margin-left: 320px;
+/*margin-right: auto;*/
+width: 340px;
+display: flex;
+margin-top: 30px;
+}
+
+
 
 /*.body {*/
 /*height: 100%;*/
@@ -247,18 +305,21 @@ img.logo{
 .footer {
 /*height: 100%;*/
 /*width: 100%;*/
-background-position:  center center;
-background: url('../images/game/fondo_footer.jpg') ;
-background-position: center center;
-background-repeat: no-repeat;
+/*background-position:  center center;*/
+/*background: url('../images/game/fondo_footer.jpg') ;*/
+/*background-position: center center;*/
+/*background-repeat: no-repeat;*/
 /*background-attachment: fixed;*/
-background-size: cover;
-background-color: #66999;
-height: 190px;
-margin: 0;
-margin-top: 70px;
-padding: 20 0 20 0;
-border-collapse: collapse;
+/*background-size: cover;*/
+/*background-color: #66999;*/
+/*height: 190px;*/
+/*margin: 0;*/
+/*margin-top: 70px;*/
+/*padding: 20 0 20 0;*/
+/*border-collapse: collapse;*/
+
+margin:  50px 40px  40px  40px;
+padding-bottom: 80px;
 }
 
 
@@ -270,11 +331,12 @@ img.tablet{
 }
 .text1-footer{
     color:white;
-    margin: -46 0 0 70;
+    margin: -58 0 0 70;
 }
 
 .text2-footer{
     color:white;
+    margin-top: 15px;
 }
 
 .logo-espol{
@@ -313,7 +375,8 @@ img.imagen-juego{
 	padding: 10px;
 	height: 3.75em;
 	/*background: #79FAC4;*/
-	background: rgba(0,0,0,.5); 
+	background: #fa9c4c;
+	opacity: .8;
 	color: #3c4a50;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -425,7 +488,7 @@ img.imagen-juego{
 
 /*Ventana emergente*/
 #ventana_body{
-    background-color: #9ec3cb;
+    background-color: #e07b37;
     color: white;
     padding-left: 20px;
     padding-top: 20px;
@@ -464,6 +527,17 @@ img.imagen-juego{
     background: none;
 
 }
+
+
+
+        /*sombra de la ventana emergente*/
+        /*.jBox-Modal .jBox-container, .jBox-Modal.jBox-closeButton-box::before {*/
+        /*    box-shadow: 0 3px 15px rgba(0, 0, 0, .4), 0 0 5px rgba(0, 0, 0, .4);*/
+        /*}*/
+        .jBox-Modal .jBox-container, .jBox-Modal.jBox-closeButton-box::before {
+            box-shadow: none;
+        }
+
 
 
 /*menu responsive*/
@@ -534,6 +608,10 @@ a:not([href]):not([tabindex]) {
 }
 
 @media screen and (max-width: 600px) {
+  .body {
+        height: 200%;
+   }
+    
     
   .row{
        margin-top: 100px;     
@@ -583,6 +661,7 @@ a:not([href]):not([tabindex]) {
       
         margin-left: 0;
         margin-top: 0;
+        
     }
     
     
@@ -593,83 +672,11 @@ a:not([href]):not([tabindex]) {
 }
 
 
-
-
-.formutext{
-    box-shadow: 10px 10px 5px grey;
+@media screen and (min-width: 1001px) {
+    
+    .topnav {
+        display: -webkit-inline-flex;
+    }
 }
-
-
-
-/*contact info box*/
-.container2 {
-    width:900px;
-    margin:250px auto 0;
-    display:flex;
-}
-.container2 .box {
-    position:relative;
-    width: 300px;
-    height:100px;
-    box-sizing:border-box;
-    text-align:center;
-    margin:0 10px;
-    background:#00171d;
-    overflow:hidden;
-    border-radius:4px;
-    box-shadow:0 0 0 2px rgba(0,7,10,1);
-}
-.container2 .box .icon {
-    width:100%;
-    height:100%;
-    background:#00171d;
-    transition: 0.5s;
-}
-.container2 .box .icon .fa {
-    font-size: 4em;
-    line-height:100px;
-    color: #0ff;
-}
-.container2 .box:hover .icon {
-    transform:scale(0);
-}
-.container2 .box .details {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#03a9f4;
-    transition:0.5s;
-    transform:scale(2);
-    opacity:0;
-}
-.container2 .box:hover .details {
-    transform:scale(1);
-    opacity:1;
-}
-.container2 .box .details h3 {
-    margin:0;
-    padding:0;
-    line-height:100px;
-    font-size:24px;
-    color:#fff;
-}
-.container2 .box .details:nth-child(2) .details {
-    background:#e91e63;
-}
-.container2 .box .details:nth-child(2) .details {
-    background:#607d8b;
-}
-
-
-
-/*estilos de nosotros*/
-.textoblanco{
-color:white;
-}
-
-
-
 
 

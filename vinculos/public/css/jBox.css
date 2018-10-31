@@ -15,7 +15,8 @@
 }
 
 .jBox-container {
-  background: #fff;
+  /*background: #fff;*/
+  background:none;
 }
 
 .jBox-content {

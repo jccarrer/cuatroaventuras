@@ -126,25 +126,28 @@ new jBox('Modal', {
   attach: '#Modal-1_1',
   height: 500,
   // title: 'I\'m a basic jBox modal window',
-  content: '<img id="grafico" style="position: relative;height:auto;" src="/images/game/imagen_de_ventana_emergente2.jpg" alt="">'+
+  content: '<img id="grafico" style="position: relative;height:auto;" src="images/game/imagen_de_ventana_emergente.jpg" alt="">'+
           '<div id="ventana_body" style="line-height: 30px;">'+
-                '<b>SQUIDS WILD WEST</b> <br>Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem Ipsum has been the industry. <br><br><br>'+
+                '<b>SERES</b> <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean <br>commodo ligula eget dolor. Aenean massa. Cum sociis  <br><br><br><br>'+
                 ' '+
           '</div>'+
-          '<a id="tutorial_text" style="float:left;" href="#">TUTORIAL</a><a id="jugar_text" style="float: right;" href="https://play.google.com/apps/testing/com.cuatroaventuras.seres/">JUGAR</a>'
+          '<a id="jugar_button" style="float: right;" href="https://play.google.com/apps/testing/com.cuatroaventuras.seres/">'+
+            '<img id="botonjugat" style="position: relative;margin-top:-100px;margin-right:10px;" src="images/game/boton.png" alt="">'+
+          '</a>'
 });
 
 new jBox('Modal', {
   attach: '#Modal-1_2',
   height: 500,
   // title: 'I\'m a basic jBox modal window',
-  content: '<img id="grafico" style="position: relative;height:auto;" src="/images/game/imagen_de_ventana2_emergente.jpg" alt="">'+
+  content: '<img id="grafico" style="position: relative;height:auto;" src="images/game/imagen_de_ventana2_emergente.jpg" alt="">'+
            '<div id="ventana_body" style="line-height: 30px;">'+
-                '<b>COLOURFULL ILLUSTRATIONS</b> <br>Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem Ipsum has been the industry. <br><br><br>'+
+                '<b>COLOURFULL ILLUSTRATIONS</b> <br>Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem Ipsum has been the industry. <br><br><br><br><br>'+
                 ' '+
            '</div>'+
-           '<a id="tutorial_text" style="float:left;" href="#">TUTORIAL</a><a  id="jugar_text" style="float: right;" href="#">JUGAR</a>'
-});
+          '<a id="jugar_button" style="float: right;" href="#">'+
+            '<img id="botonjugat" style="position: relative;margin-top:-100px;margin-right:10px;" src="images/game/boton.png" alt="">'+
+          '</a>'});
 
 
 new jBox('Modal', {
@@ -403,4 +406,5 @@ var getTitle = function () {
 
 
 });
+
 
