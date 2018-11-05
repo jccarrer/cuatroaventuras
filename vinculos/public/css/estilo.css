@@ -5,6 +5,10 @@
 	text-decoration: none;
 	border: none;
 	outline: none;
+	font-family: Arial, sans-serif;
+	font-weight:500;
+	font-size: normal;
+	font-variant:normal;
 }
 
 
@@ -47,6 +51,17 @@ body {
     width: 100%;
     background-position:  center center;
     background: url('../images/game/productos_banner.jpg') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blackbanner2 {
+    /*height: 100%;*/
+    width: 100%;
+    background-position:  center center;
+    background: url('../images/game/nosotros_banner.jpg') ;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

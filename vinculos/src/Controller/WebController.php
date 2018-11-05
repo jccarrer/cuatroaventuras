@@ -21,7 +21,7 @@ class WebController extends Controller
 
 
     /**
-     * @Route("/productos", name="productos")
+     * @Route("/public/productos", name="productos")
      */
     public function productos()
     {
@@ -32,7 +32,7 @@ class WebController extends Controller
 
 
     /**
-     * @Route("/contactenos", name="contactenos")
+     * @Route("/public/contactenos", name="contactenos")
      */
     public function contactenos()
     {
@@ -42,7 +42,7 @@ class WebController extends Controller
     }
 
     /**
-     * @Route("/nosotros", name="nosotros")
+     * @Route("/public/nosotros", name="nosotros")
      */
     public function nosotros()
     {

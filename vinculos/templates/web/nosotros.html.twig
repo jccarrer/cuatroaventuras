@@ -2,25 +2,40 @@
 {% extends 'base.html.twig' %}
 
 
-{#{% block title %}Symfony - Welcome{% endblock %}#}
-
-
 {% block body %}
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <div class="body">
  
 
-
-       
+    <div class="blackbanner2">  
+    <div class="container productoText">    
+        <div class="row">
+            <br>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                Nosotros <br>
+                -------  <br>
+                En EDCOM, siempre a la vanguardia de la<br>
+                tecnología incorporando los sistemas de <br>
+                información en el desarrollo e implementando<br>
+                nevas metodologías oara la educación infantil,<br>
+                nacen los proyectos sobre Multimedios<br>
+                Prueba de nuestros juegos  y descubre cuáles <br>
+                Interactivos Didácticos Infantiles.<br><br>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <img class="" src="{{ asset('images/game/productos_ave.png') }}" />
+            </div>
+            <br>
+        </div>        
+    </div>
+    </div>  
+    
+        
     <div class="container">    
         
-        
        
-        <!--div class="row  textoblanco">
+        <div class="row">
             <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-		
-                <h3>¿QUÉ ES EL MIDI?</h3>
+                <h2>¿QUÉ ES EL MIDI?</h2>
                 El Multimedia Interactivo Didáctico para la Educación 
                 Básica Infantil es un proyecto educativo denominado “MIDI”, 
                 el cual se está desarrollando como tema de tesis por los 
@@ -35,7 +50,7 @@
                 producción y post producción de este proyecto.
             </div>
             <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12">
-                <h3>¿QUÉ ES 4 AVENTURAS?</h3>
+                <h2>¿QUÉ ES 4 AVENTURAS?</h2>
                 Concientes de la deficiencia del sistema educativo de nuestro país, 
                 en especial la etapa pre-escolar, y por ser ésta muy amplia e 
                 importante en la educación inicial de todo niño, se vio la necesidad 
@@ -46,108 +61,27 @@
                 y permite al niño a través de historias y juegos aprender de una manera 
                 fácil y entretenida.
                 
-
-		<br><br><br><br><br><br>
-
             </div>
             
             
-            
-            
-            
-        </div-->  
-  
-
-
-
-
-
-
-
-<div class="w3-row-padding">
-
-<div class="w3-third w3-margin-bottom">
-  <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="background-color:white;">
-    <li class="w3-blue w3-xlarge w3-padding-32">¿QUÉ ES EL MIDI?</li>
-    <li class="w3-padding-16">
-		El Multimedia Interactivo Didáctico para la Educación 
-                Básica Infantil es un proyecto educativo denominado “MIDI”, 
-                el cual se está desarrollando como tema de tesis por los 
-                alumnos de las carreras de Análisis de Sistemas y Diseño 
-                Gráfico.<br>
-Este proyecto ha contado con la valiosa colaboración tanto 
-                económica como logística de una importante unidad de la ESPOL,
-                el PROTCOM, como componente ejecutor de este Proyecto, 
-                recibiendo equipos, instalaciones, software y material de 
-                trabajo que han ayudado para la investigación, pre-producción, 
-                producción y post producción de este proyecto.
-</li>
-   
-  </ul>
-</div>
-
-<div class="w3-third w3-margin-bottom">
-  
-  <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="background-color:white;">
-    <li class="w3-green w3-xlarge w3-padding-32">¿QUÉ ES 4 AVENTURAS?</li>
-    <li class="w3-padding-16">Concientes de la deficiencia del sistema educativo de nuestro país, 
-                en especial la etapa pre-escolar, y por ser ésta muy amplia e 
-                importante en la educación inicial de todo niño, se vio la necesidad 
-                de realizar una secuencia de aplicaciones, con el objetivo de cubrir 
-                todos los temas relacionados con las ciencias básicas.<br>
-                
-                La aplicación sirve de apoyo al maestro para complementar su enseñanza 
-                y permite al niño a través de historias y juegos aprender de una manera 
-                fácil y entretenida.<br></li>
-
-    </li>
-  </ul>
-</div>
-
-<div class="w3-third w3-margin-bottom">
-  <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="background-color:white;">
-    <li class="w3-blue w3-xlarge w3-padding-32">¿QUÉ ES EL MIDI?</li>
-    <li class="w3-padding-16">
-		El Multimedia Interactivo Didáctico para la Educación 
-                Básica Infantil es un proyecto educativo denominado “MIDI”, 
-                el cual se está desarrollando como tema de tesis por los 
-                alumnos de las carreras de Análisis de Sistemas y Diseño 
-                Gráfico.<br>
-Este proyecto ha contado con la valiosa colaboración tanto 
-                económica como logística de una importante unidad de la ESPOL,
-                el PROTCOM, como componente ejecutor de este Proyecto, 
-                recibiendo equipos, instalaciones, software y material de 
-                trabajo que han ayudado para la investigación, pre-producción, 
-                producción y post producción de este proyecto.
-</li>
-   
-  </ul>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-       
-      
-      </div>        
+        </div>        
+           
         
-   
+    </div>
     
+ 
+    <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+    <script src="{{ asset('js/Demo.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/funcion.js') }}"></script>
+    <script src="{{ asset('js/jBox.js') }}"></script>
+    <script src="{{ asset('js/jBox.min.js') }}"></script>
+    <script src="{{ asset('js/jBox.Confirm.js') }}"></script>
+    <script src="{{ asset('js/jBox.Confirm.min.js') }}"></script>
+    <script src="{{ asset('js/jBox.Image.js') }}"></script>
+    <script src="{{ asset('js/jBox.Image.min.js') }}"></script>
+    <script src="{{ asset('js/jBox.Notice.js') }}"></script>
+    <script src="{{ asset('js/jBox.Notice.min.js') }}"></script>
     
 
 
@@ -155,6 +89,4 @@ Este proyecto ha contado con la valiosa colaboración tanto
 {% endblock %}
 
 {% block javascripts %}
-    {#<script src="{{ asset('js/jquery-3.2.1.js') }}"></script>#}
-    {#<script src="{{ asset('js/funcion.js') }}"></script>#}
 {% endblock %}

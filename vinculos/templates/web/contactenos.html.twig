@@ -1,49 +1,78 @@
 {# templates/web/home.html.twig #}
 {% extends 'base.html.twig' %}
 
-
-
-
-
-{#{% block title %}Symfony - Welcome{% endblock %}#}
-
-
 {% block body %}
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.026468100623!2d-79.9642896865841!3d-2.1435450377633276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72fd09db9eb7%3A0xab610e2c62375c0!2sEscuela+de+Dise%C3%B1o+y+Comunicaci%C3%B3n+Visual!5e0!3m2!1ses!2sec!4v1538182186633" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <link rel="stylesheet" href="{{ asset('css/formulario.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/formulario_util.css') }}" />
 
     <div class="body">
-<br><br><br><br><br>
-    <div class="container container2">    
-     
-	<div class="box">
-		<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-		<div class='details'><h3>Guayaquil</h3></div>
-	</div>
-	
-	<div class="box">
-		<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-		<div class='details'><h3>+593 986755678</h3></div>
-	</div>
-	
-	<div class="box">
-		<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-		<div class='details'><h3>aventuras@gmail.com</h3></div>
-	</div>
-          
 
-       
-        </div>        
-        
-   <br><br><br><br>
-    
-    
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.026468100623!2d-79.9642896865841!3d-2.1435450377633276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72fd09db9eb7%3A0xab610e2c62375c0!2sEscuela+de+Dise%C3%B1o+y+Comunicaci%C3%B3n+Visual!5e0!3m2!1ses!2sec!4v1538182186633" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <br><br>    
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="{{ asset('images/game/img-01.png') }}" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					¿Alguna pregunta o sugerencia?
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="name" placeholder="Nombre">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Correo">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="Asunto">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+					<textarea class="input1" name="message" placeholder="Mensaje"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Enviar mensaje
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+    <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+    <script src="{{ asset('js/Demo.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/funcion.js') }}"></script>
+    <script src="{{ asset('js/jBox.js') }}"></script>
+    <script src="{{ asset('js/jBox.min.js') }}"></script>
+    <script src="{{ asset('js/jBox.Confirm.js') }}"></script>
+    <script src="{{ asset('js/jBox.Confirm.min.js') }}"></script>
+    <script src="{{ asset('js/jBox.Image.js') }}"></script>
+    <script src="{{ asset('js/jBox.Image.min.js') }}"></script>
+    <script src="{{ asset('js/jBox.Notice.js') }}"></script>
+    <script src="{{ asset('js/jBox.Notice.min.js') }}"></script>
+
 
 
 
 {% endblock %}
 
 {% block javascripts %}
-    {#<script src="{{ asset('js/jquery-3.2.1.js') }}"></script>#}
-    {#<script src="{{ asset('js/funcion.js') }}"></script>#}
 {% endblock %}
